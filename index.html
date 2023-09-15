@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Color Scheme Generator</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  
+  <body>
+    <div class="container">   
+        <h1>Color Scheme Generator</h1>
+        
+        <div class="color-picker-container">
+            <input type="color" id="color-picker" class="pointer">
+            <select name="mode" id="mode">
+                <option value="monochrome">monochrome</option>
+                <option value="monochrome-dark">monochrome-dark</option>
+                <option value="monochrome-light">monochrome-light</option>
+                <option value="analogic">analogic</option>
+                <option value="complement">complement</option>
+                <option value="analogic-complement">analogic-complement</option>
+                <option value="triad">triad</option>
+                <option value="quad">quad</option>
+            </select>
+            <div class="checkbox-div">
+                <label for="color-name-checkbox">Show color name</label>
+                <input type="checkbox" id="color-name-checkbox">
+            </div>
+        </div>
+        
+        <button id="get-scheme-btn" class="pointer">Get Color Scheme</button>
+        
+        <div class="scheme-div" id="scheme-div">
+        </div>
+    </div>
+    
+	<script src="index.js"></script>
+  </body>
+  
+</html>
+

@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #1F2937;
+    color: whitesmoke;
+    padding: 1em 0.5em;
+    font-size: 0.95rem;
+}
+
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-size: 1.7rem;
+    margin: 0;
+}
+
+p {
+    margin: 0.2em;
+}
+
+.pointer:hover {
+    cursor: pointer;
+}
+
+.color-picker-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.85em;
+    padding: 1.5em 0 0;
+}
+
+input[type='color'] {
+    height: 35px;
+}
+
+#mode {
+    padding: 2px 8px;
+    border-radius: 5px;
+    background-color: inherit;
+    color: inherit;
+}
+
+option {
+    background-color: #1F2937;
+}
+
+#get-scheme-btn {
+    padding: 8px 12px;
+    border-radius: 5px;
+    background-color: #3D4B60;
+    color: inherit;
+    border: none;
+    margin: 1.2em auto 2.5em;
+    display: block;
+}
+
+#get-scheme-btn:hover {
+    background-color: #041E42;
+}
+
+.color-info {
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    max-width: 243px;
+    margin: 0 auto;
+}
+
+.color:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    transition: 0.8s ease;
+}
+
+/* Media Querys */
+
+@media (min-width: 320px) {
+    .container {
+        padding: 1.5em 1em;
+    }   
+}
+
+@media (min-width: 480px) {
+    .container {
+        padding: 2em 1em;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .color-picker-container {
+        padding: 2em 0 0;
+    }
+    
+    #get-scheme-btn {
+        margin: 1.2em auto 3em;
+    }
+}
+
+@media (min-width: 767px) {
+    .container {
+        padding: 3em 1em;
+    }
+    
+    .color-picker-container {
+        padding: 2em 1.8em 0;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 590px;
+    }
+    
+    #mode {
+        padding: 12px 8px;
+        width: 320px;
+        text-align: left;
+    }
+    
+    #get-scheme-btn {
+        padding: 15px 6px;
+        margin: 1.5em auto 2em;
+    }
+    
+    .scheme-div {
+        padding: 5px;
+        margin: 0 auto;
+        display: flex;
+        max-width: 559px;
+    }
+    
+    .color-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5em;
+        max-width: none;
+        text-align: center;
+    }
+    
+    .color {
+        width: 110px;
+        height: 550px;
+    }
+    
+    .color:hover {
+        -webkit-transform: scale(1.01);
+        -ms-transform: scale(1.01);
+        transform: scale(1.01);
+        transition: 0.8s ease;
+    }
+}
