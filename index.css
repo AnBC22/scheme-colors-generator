@@ -7,11 +7,14 @@ html, body {
     padding: 0;
 }
 
-.container {
+body {
     background-color: #1F2937;
+}
+
+.container {
     color: whitesmoke;
     padding: 1em 0.5em;
-    font-size: 0.95rem;
+    font-size: 0.98rem;
 }
 
 h1 {
@@ -52,6 +55,13 @@ option {
     background-color: #1F2937;
 }
 
+.checkbox-div {
+    display: flex;
+    gap: 0.4em;
+    align-items: center; 
+}
+
+
 #get-scheme-btn {
     padding: 8px 12px;
     border-radius: 5px;
@@ -60,6 +70,7 @@ option {
     border: none;
     margin: 1.2em auto 2.5em;
     display: block;
+    font-weight: bold;
 }
 
 #get-scheme-btn:hover {
@@ -111,6 +122,11 @@ option {
 @media (min-width: 767px) {
     .container {
         padding: 3em 1em;
+        font-size: 1.1rem;
+    }
+
+    h1 {
+        font-size: 2.6rem;
     }
     
     .color-picker-container {
@@ -118,7 +134,7 @@ option {
         flex-direction: row;
         justify-content: space-between;
         margin: 0 auto;
-        max-width: 590px;
+        max-width: 610px;
     }
     
     #mode {
